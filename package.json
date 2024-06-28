@@ -1,0 +1,43 @@
+{
+  "name": "@oxth/heatmap",
+  "version": "1.0.7",
+  "description": "Dynamic JavaScript Heatmaps for the Web and server",
+  "author": "Oxth",
+  "license": "MIT",
+  "main": "./dist/index.js",
+  "types": "./dist/index.d.ts",
+  "homepage": "https://github.com/oxth/heatmap",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oxth/heatmap.git"
+  },
+  "files": [
+    "dist",
+    "package.json",
+    "README.md"
+  ],
+  "keywords": [
+    "heatmap",
+    "heatmaps",
+    "heat map",
+    "heat maps"
+  ],
+  "scripts": {
+    "dev": "rollup -wm -c rollup.config.js",
+    "build": "rimraf ./dist && tsc",
+    "publish": "npm publish --access public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "dependencies": {
+    "canvas": "^2.11.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.14.8",
+    "@typescript-eslint/eslint-plugin": "^7.14.1",
+    "eslint": "^8.57.0",
+    "eslint-config-prettier": "^9.1.0",
+    "eslint-plugin-prettier": "^5.1.3",
+    "rimraf": "^5.0.7",
+    "typescript": "^5.5.2"
+  }
+}
